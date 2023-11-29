@@ -1,0 +1,205 @@
+body {
+    width: 99%;
+    --main-color:rgb(255, 204, 0);
+}
+.container {
+    width: 1000px;
+    border-radius: 5px;
+    border:3px solid #858585;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+}
+h2 {
+    background-color: var(--main-color);
+    width: 100%;
+    padding: 7px;
+}
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    gap: 10px;
+    justify-content: center;
+    
+}
+.box {
+    border: 3px solid #858585;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-wrap: wrap;
+    flex-direction: column;
+}
+.box span {
+    font-size: 2.5em;
+    color: var(--main-color);
+}
+.box:hover {
+    background-color: var(--main-color);
+    border: 3px solid black;
+}
+.box:hover span {
+    color: black;
+}
+.add-page,
+.info-page,
+.fees-page,
+.payment-page,
+.delete-page  {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    background-color: rgba(0, 0, 0, 0.852);
+    color: white;
+    direction: rtl;
+    display: none;
+    overflow: scroll;
+}
+h3 {
+    font-size: 2em;
+}
+span.xx {
+    font-size: 60px;
+}
+.xx {
+    margin: 10px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.682);
+}
+.xx:hover {
+    color: white;
+}
+.add-page .inputes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+.add-page input {
+    padding: 10px;
+    width: 200px;
+    font-size: 1.5em;
+}
+.add-page button {
+    width: 200px;
+    padding: 10px;
+    background-color: var(--main-color);
+    border: transparent;
+    font-weight: bold;
+    font-size: 2em;
+    cursor: pointer;
+}
+.info-page table,
+.fees-page table,
+.payment-page table,
+.delete-page table {
+    width: 100%;
+    padding: 10px;
+}
+.info-page tr,
+.fees-page tr,
+.payment-page tr,
+.delete-page tr {
+    width: 100%;
+}
+.info-page tr:hover td,
+.fees-page tr:hover td,
+.payment-page tr:hover td,
+.delete-page tr:hover td {
+    background-color: var(--main-color);
+}
+.info-page table #tr,
+.fees-page table #tr,
+.payment-page table #tr,
+.delete-page table #tr {
+    position: sticky;
+    top: 0;
+}
+.info-page th,
+.fees-page th,
+.payment-page th,
+.delete-page th {
+    background-color: var(--main-color);
+    color: black;
+    width: calc(100%/11);
+    padding: 10px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+.info-page td,
+.fees-page td,
+.payment-page td,
+.delete-page td {
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+.payment-page table tbody tr td:last-child,
+.delete-page table tr td:last-child {
+    font-weight: bold;
+    font-size: 2em;
+    cursor: pointer;
+}
+.payment-page .screen {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    display: none;
+}
+.payment {
+    background-color: white;
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    z-index: 3;
+}
+.payment .xx {
+    color: black;
+}
+.payment button, .payment input{
+    width: 50%;
+    height: 30px;
+    cursor: pointer;
+}
+/* .delete-page {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    background-color: rgba(0, 0, 0, 0.852);
+    color: white;
+    direction: rtl;
+    overflow: scroll;
+} */
+input[type="search"] {
+    height: 3em;
+    width: 80%;
+    padding: 5px;
+    font-size: large;
+}
+#agree-btn {
+    background-color: rgb(89, 197, 89);
+    width: 105%;
+    border: black 1px solid;
+}
+#btn2 {
+    color: white;
+    border: transparent;
+    cursor: auto;
+}

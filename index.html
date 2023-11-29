@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام إدارة المدرسة</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="container">
+        <div class="add-page" id="add-page">
+            <span class="material-symbols-outlined xx" onclick="re()">
+                close
+            </span>
+            <h3>إضافة طالب</h3>
+            <div class="inputes">
+                <div class="student-name">
+                    <input type="text" placeholder="الاسم الاول" id="first-name">
+                    <input type="text" placeholder="الاسم الثاني" id="second-name">
+                    <input type="text" placeholder="الاسم الثالث" id="third-name">
+                    <input type="text" placeholder="الاسم الرابع" id="last-name">
+                </div>
+                <div class="class">
+                    <input type="number" placeholder="الرقم الوطني" id="id">
+                    <input type="text" placeholder="الصف" id="class">
+                    <input type="text" placeholder="الشعبة" id="branch">    
+                </div>
+                <div class="info">
+                    <input type="date" placeholder="تاريخ الميلاد" id="birth-date">
+                    <input type="text" placeholder="الجنسية" id="nationality">
+                    <input type="text" placeholder="اسم الأم" id="mother-name">
+                    <input type="text" placeholder="عنوان السكن" id="address">
+                    <input type="text" placeholder="الحالة الصحية" id="health">
+                </div>
+                <div class="fee">
+                    <input type="number" placeholder="الرسوم المطلوبة" id="fees-total">
+                    <input type="text" placeholder="الخصم" id="discount">
+                    <input type="text" placeholder="الرسوم بعد الخصم" id="fees-af-dis" disabled>
+                    <input type="text" placeholder="المبلغ المدفوع" id="paid-amount">    
+                    <input type="text" placeholder="المبلغ المتبقي" id="amount-not-paid" disabled>    
+                </div>
+                <button id="add-btn">إضافة</button>
+            </div>
+        </div>
+        <div class="info-page" id="info-page">
+            <span class="material-symbols-outlined xx" onclick="re()">
+                close
+            </span>
+            <h3>معلومات الطلاب</h3>
+            <input type="search" placeholder="بحث عن طالب" class="search">
+            <table>
+                <tr id="tr">
+                    <th>الاسم الاول</th>
+                    <th>الاسم الثاني</th>
+                    <th>الاسم الثالث</th>
+                    <th>الاسم الرابع</th>
+                    <th>الرقم الوطني</th>
+                    <th>الصف</th>
+                    <th>الشعبة</th>
+                    <th>تاريخ الميلاد</th>
+                    <th>الجنسية</th>
+                    <th>اسم الأم</th>
+                    <th>عنوان السكن</th>
+                    <th>الحالة الصحية</th>
+                </tr>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="fees-page" id="fees-page">
+            <span class="material-symbols-outlined xx" onclick="re()">
+                close
+            </span>
+            <h3>إدارة الرسوم</h3>
+            <input type="search" placeholder="بحث عن طالب" class="search">
+            <table>
+                <tr id="tr">
+                    <th>الاسم</th>
+                    <th>الصف</th>
+                    <th>الشعبة</th>
+                    <th>الرسوم المطلوبة</th>
+                    <th>الخصم</th>
+                    <th>الرسوم بعد الخصم</th>
+                    <th>المبلغ المدفوع</th>
+                    <th>المبلغ المتبقي</th>
+                </tr>
+                <tbody id="tbodytwo">
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="payment-page" id="payment-page">
+            <span class="material-symbols-outlined xx" onclick="re()">
+                close
+            </span>
+            <h3>إضافة دفعة</h3>
+            <input type="search" placeholder="بحث عن طالب" class="search">
+            <div class="screen" id="pay-screen">
+                <div class="payment">
+                    <span class="material-symbols-outlined xx" onclick="reTwo()">
+                        close
+                    </span>
+                    <input type="text" disabled placeholder="اسم الطالب" id="name-add-fees">
+                    <input type="num" disabled placeholder="القيمة المتبقية" id="amount-one-add-fees">
+                    <input type="num" placeholder="القيمة المراد دفعها" id="amount-two-add-fees">
+                    <button id="btn2"></button>
+                </div>
+            </div>
+            <table>
+                <tr id="tr">
+                    <th>الاسم</th>
+                    <th>الصف</th>
+                    <th>الشعبة</th>
+                    <th>إضافة</th>
+                </tr>
+                <tbody id="tbodythree">
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="delete-page" id="delete-page">
+            <span class="material-symbols-outlined xx" onclick="re()">
+                close
+            </span>
+            <h3>إزالة طالب</h3>
+            <input type="search" placeholder="بحث عن طالب" class="search">
+            <table>
+                <tr>
+                    <th>اسم الطالب</th>
+                    <th>الرقم الوطني</th>
+                    <th>إزالة</th>
+                </tr>
+                <tbody id="tbody-delete">
+
+                </tbody>
+            </table>
+        </div>
+        <h2>برنامج إدارة المدرسة</h2>
+        <h1>الصفحة الرئيسية</h1>
+        <div class="boxes">
+            <div class="box" id="add_student" onclick="addStudent()">
+                <span class="material-symbols-outlined">
+                    add
+                </span>
+                إضافة طالب
+            </div>
+            <div class="box" id="student_info" onclick="studentInfo()">
+                <span class="material-symbols-outlined">
+                    account_circle
+                </span>
+                معلومات الطلاب
+            </div>
+            <div class="box" id="manage-fees" onclick="manageFees()">
+                <span class="material-symbols-outlined">
+                    account_balance
+                </span>
+                إدارة الرسوم
+            </div>
+            <div class="box" id="student_info" onclick="addPayment()">
+                <span class="material-symbols-outlined">
+                    payments
+                </span>
+                إضافة دفعة
+            </div>
+            <div class="box" id="student_info" onclick="deleteStudent()">
+                <span class="material-symbols-outlined">
+                    delete
+                </span>
+                إزالة طالب
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
