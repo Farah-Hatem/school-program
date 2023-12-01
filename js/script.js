@@ -257,3 +257,23 @@ function deleteFuncction(i) {
     localStorage.student = JSON.stringify(dataStudent);
     showDelete()
 }
+document.getElementById("exit").onclick = function() {
+    console.log(this.parentElement);
+    this.parentElement.style.display = 'none';
+}
+document.getElementById("exit2").onclick = function() {
+    console.log(this.parentElement);
+    this.parentElement.style.display = 'none';
+}
+document.getElementById("exit3").onclick = function() {
+    console.log(this.parentElement);
+    this.parentElement.style.display = 'none';
+}
+document.getElementById("exit4").onclick = function() {
+    console.log(this.parentElement);
+    this.parentElement.style.display = 'none';
+}
+document.getElementById("exit5").onclick = function() {
+    console.log(this.parentElement);
+    this.parentElement.style.display = 'none';
+}
